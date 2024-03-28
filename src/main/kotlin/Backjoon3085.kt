@@ -7,7 +7,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val map = Array(size) { charArrayOf() }
 
     //맵 정보 추가
-    for (i in 0..<size) map[i] = readLine().toCharArray()
+    for (i in 0..<size) map[i] = readln().toCharArray()
 
     //결과
     var result = 1

@@ -15,7 +15,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     //v = 늑대
     //. = 빈 공간
     repeat(sizeX) { i ->
-        map[i] = readLine().toCharArray()
+        map[i] = readln().toCharArray()
     }
 
     repeat(sizeX) { x ->
