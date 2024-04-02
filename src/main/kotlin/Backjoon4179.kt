@@ -29,9 +29,7 @@ fun main() = with(System.`in`.bufferedReader()) {
 
     println(bfs(start, fires, map))
 }
-
-
-fun bfs(start: Pair<Int, Int>, fires: Queue<Pair<Int, Int>>, map: Array<CharArray>): Any {
+private fun bfs(start: Pair<Int, Int>, fires: Queue<Pair<Int, Int>>, map: Array<CharArray>): Any {
     //인접한 4면 이동
     val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 

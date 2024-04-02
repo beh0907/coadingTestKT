@@ -31,7 +31,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println(result)
 }
 
-fun bfs(graph: Array<ArrayList<Int>>, visited: BooleanArray, start: Int) {
+private fun bfs(graph: Array<ArrayList<Int>>, visited: BooleanArray, start: Int) {
     val queue:Queue<Int> = LinkedList()
     queue.offer(start)
 

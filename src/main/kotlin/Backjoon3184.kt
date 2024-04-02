@@ -33,7 +33,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println("$aliveSheep $aliveWolf")
 }
 
-fun bfs(map: Array<CharArray>, visited: Array<BooleanArray>, x: Int, y: Int): Pair<Int, Int> {
+private fun bfs(map: Array<CharArray>, visited: Array<BooleanArray>, x: Int, y: Int): Pair<Int, Int> {
     //4방향 이동
     val dx = intArrayOf(1, 0, 0, -1)
     val dy = intArrayOf(0, 1, -1, 0)

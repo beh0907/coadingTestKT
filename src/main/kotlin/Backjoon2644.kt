@@ -17,7 +17,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println(bfs(families, person1, person2))
 }
 
-fun bfs(families: Array<Person>, start: Int, end: Int): Int {
+private fun bfs(families: Array<Person>, start: Int, end: Int): Int {
     val visited = BooleanArray(families.size)
     visited[start] = true
 

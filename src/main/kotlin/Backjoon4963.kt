@@ -35,7 +35,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
 }
 
 //섬의 연결부분을 찾아 지운다
-fun bfs(map: Array<IntArray>, startW: Int, startH: Int) {
+private fun bfs(map: Array<IntArray>, startW: Int, startH: Int) {
     //8방향 인접 이동
     val dx = intArrayOf(-1, -1, 0, 1, 1, 1, 0, -1)
     val dy = intArrayOf(0, 1, 1, 1, 0, -1, -1, -1)

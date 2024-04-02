@@ -46,13 +46,13 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println(result)
 }
 
-fun swap(map: Array<CharArray>, x1: Int, y1: Int, x2: Int, y2: Int) {
+private fun swap(map: Array<CharArray>, x1: Int, y1: Int, x2: Int, y2: Int) {
     val temp = map[x1][y1]
     map[x1][y1] = map[x2][y2]
     map[x2][y2] = temp
 }
 
-fun getLongestCandy(map: Array<CharArray>): Int {
+private fun getLongestCandy(map: Array<CharArray>): Int {
     var result = 0
 
     //행 탐색

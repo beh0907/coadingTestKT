@@ -31,7 +31,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     }
 }
 
-fun bfs(locations: ArrayList<Pair<Int, Int>>): String {
+private fun bfs(locations: ArrayList<Pair<Int, Int>>): String {
     //큐에 상근이의 위치를 추가한다
     val queue: Queue<Pair<Int, Int>> = LinkedList()
     queue.offer(locations[0])

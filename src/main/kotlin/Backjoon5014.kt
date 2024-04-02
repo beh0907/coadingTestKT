@@ -9,7 +9,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println(bfs(F, S - 1, G - 1, U, D))
 }
 
-fun bfs(floor: Int, startFloor: Int, goalFloor: Int, up: Int, down: Int): String {
+private fun bfs(floor: Int, startFloor: Int, goalFloor: Int, up: Int, down: Int): String {
     //출발점 방문 처리
     val visited = BooleanArray(floor)
     visited[startFloor] = true

@@ -33,7 +33,7 @@ fun main() = with(System.`in`.bufferedReader()) {
 }
 
 
-fun bfs(start: Pair<Int, Int>, map: Array<CharArray>, fires: Queue<Pair<Int, Int>>): Any {
+private fun bfs(start: Pair<Int, Int>, map: Array<CharArray>, fires: Queue<Pair<Int, Int>>): Any {
     //인접한 4면 이동
     val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 

@@ -1,7 +1,7 @@
 //매직스타
 //https://www.acmicpc.net/problem/3967
 
-val blankList = ArrayList<Pair<Int, Int>>()
+private val blankList = ArrayList<Pair<Int, Int>>()
 
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val map = Array(5) { CharArray(9) }

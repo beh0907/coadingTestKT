@@ -2,7 +2,6 @@ import java.util.*
 
 //탈출
 //https://www.acmicpc.net/problem/3055
-
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val (r, c) = readln().split(" ").map { it.toInt() }.toIntArray()
     val map = Array(r) { CharArray(c) }
@@ -31,7 +30,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println(bfs(map, waters, start))
 }
 
-fun bfs(map: Array<CharArray>, waters: Queue<Pair<Int, Int>>, start: Pair<Int, Int>): Any {
+private fun bfs(map: Array<CharArray>, waters: Queue<Pair<Int, Int>>, start: Pair<Int, Int>): Any {
     //인접한 4면 이동
     val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 

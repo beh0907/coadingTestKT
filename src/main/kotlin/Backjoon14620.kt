@@ -4,12 +4,12 @@ import kotlin.math.min
 //https://www.acmicpc.net/problem/14620
 
 
-val dx = arrayOf(-1, 0, 1, 0)
-val dy = arrayOf(0, 1, 0, -1)
-var result = Int.MAX_VALUE
-lateinit var map: Array<IntArray> // 맵
-lateinit var dp: Array<IntArray> // 씨앗 발아 비용
-lateinit var visited: Array<BooleanArray> // 방문
+private val dx = arrayOf(-1, 0, 1, 0)
+private val dy = arrayOf(0, 1, 0, -1)
+private var result = Int.MAX_VALUE
+private lateinit var map: Array<IntArray> // 맵
+private lateinit var dp: Array<IntArray> // 씨앗 발아 비용
+private lateinit var visited: Array<BooleanArray> // 방문
 
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     val size = readln().toInt()
@@ -42,7 +42,7 @@ fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
     println(result)
 }
 
-fun dfs(cost: Int, count: Int) {
+private fun dfs(cost: Int, count: Int) {
     //꽃을 3개 다 심었다면 최소값을 저장하고 종료
     if (count == 3) {
         result = min(result, cost)
@@ -69,7 +69,7 @@ fun dfs(cost: Int, count: Int) {
 }
 
 //씨앗을 심을 수 있는지 확인한다
-fun isPossible(x: Int, y: Int): Boolean {
+private fun isPossible(x: Int, y: Int): Boolean {
     repeat(4) { dir ->
         val moveX = x + dx[dir]
         val moveY = y + dy[dir]
@@ -81,7 +81,7 @@ fun isPossible(x: Int, y: Int): Boolean {
 }
 
 //꽃이 핀 영역을 설정한다
-fun checkVisited(x: Int, y: Int, value: Boolean) {
+private fun checkVisited(x: Int, y: Int, value: Boolean) {
     //현재 위치 체크
     visited[x][y] = value
 
