@@ -1,4 +1,4 @@
-//NxM 보드 완주하기
+package backjoon//NxM 보드 완주하기
 //https://www.acmicpc.net/problem/9944
 
 import kotlin.math.min

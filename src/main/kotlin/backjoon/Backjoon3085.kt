@@ -1,3 +1,5 @@
+package backjoon
+
 import kotlin.math.max
 
 //사탕게임

@@ -1,9 +1,15 @@
+package backjoon
+
+import java.io.BufferedReader
+import java.io.InputStreamReader
 import java.util.*
 
 //촌수 계산
 //https://www.acmicpc.net/problem/2644
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
-    val n = readln().toInt()
+fun main(args: Array<String>)  {
+    val br = BufferedReader(InputStreamReader(System.`in`)) // BufferedReader 생성
+
+    val n = br.readLine().toInt()
     val (person1, person2) = readln().split(" ").map { it.toInt() - 1 }
     val m = readln().toInt()
 

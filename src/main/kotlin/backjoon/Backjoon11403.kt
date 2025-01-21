@@ -1,3 +1,5 @@
+package backjoon
+
 //경로찾기
 //https://www.acmicpc.net/problem/11403
 //플로이드 와샬

@@ -1,3 +1,5 @@
+package backjoon
+
 //스타트링크
 //https://www.acmicpc.net/problem/9372
 fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {

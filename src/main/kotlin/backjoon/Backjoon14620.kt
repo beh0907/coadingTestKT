@@ -1,3 +1,5 @@
+package backjoon
+
 import kotlin.math.min
 
 //꽃길

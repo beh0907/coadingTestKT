@@ -1,3 +1,5 @@
+package backjoon
+
 import java.util.*
 
 //섬의 개수

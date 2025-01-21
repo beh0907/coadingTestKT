@@ -1,3 +1,5 @@
+package backjoon
+
 import java.util.*
 
 //미로 탈출

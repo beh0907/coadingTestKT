@@ -1,4 +1,4 @@
-
+package backjoon
 
 //주사위 게임
 //https://www.acmicpc.net/problem/3085

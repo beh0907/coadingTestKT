@@ -1,3 +1,5 @@
+package backjoon
+
 import java.util.*
 
 //스타트링크

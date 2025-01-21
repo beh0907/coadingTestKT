@@ -1,3 +1,5 @@
+package backjoon
+
 //로봇
 //입력값들의 문제로 trim 추가
 //https://www.acmicpc.net/problem/13901

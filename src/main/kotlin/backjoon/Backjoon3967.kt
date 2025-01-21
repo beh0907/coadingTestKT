@@ -1,3 +1,5 @@
+package backjoon
+
 //매직스타
 //https://www.acmicpc.net/problem/3967
 
@@ -52,7 +54,7 @@ private fun dfs(map: Array<CharArray>, visited: BooleanArray, cnt: Int) {
         visited[i] = true
         map[x][y] = 'A' + i
 
-        //dfs 재귀
+        //backjoon.dfs 재귀
         dfs(map, visited, cnt + 1)
 
         //저장된 값 롤백

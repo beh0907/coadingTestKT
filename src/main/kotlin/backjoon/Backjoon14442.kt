@@ -1,3 +1,5 @@
+package backjoon
+
 import java.util.*
 
 //벽 부수고 이동하기 2

@@ -1,3 +1,5 @@
+package backjoon
+
 import java.util.*
 import kotlin.math.abs
 
