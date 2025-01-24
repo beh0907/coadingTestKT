@@ -3,7 +3,7 @@ package backjoon
 //로봇
 //입력값들의 문제로 trim 추가
 //https://www.acmicpc.net/problem/13901
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     //지도 사이즈를 얻어온다
     val (w, h) = readln().trim().split(" ").map { it.toInt() }
 

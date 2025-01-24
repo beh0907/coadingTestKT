@@ -9,7 +9,7 @@ private val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 
 private lateinit var map: Array<IntArray>
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (x, y, cheeses) = readln().trim().split(" ").map { it.toInt() }
     map = Array(x) { IntArray(y) }
 

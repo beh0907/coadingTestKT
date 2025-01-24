@@ -4,7 +4,7 @@ import java.util.*
 
 //섬의 개수
 //https://www.acmicpc.net/problem/4963
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     while (true) {
         //지도 사이즈를 얻어온다
         val (w, h) = readln().split(" ").map { it.toInt() }

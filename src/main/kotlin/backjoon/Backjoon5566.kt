@@ -2,7 +2,7 @@ package backjoon
 
 //주사위 게임
 //https://www.acmicpc.net/problem/3085
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (N, M) = readln().split(" ").map { it.toInt() }
     val map = IntArray(N)
     var start = 1

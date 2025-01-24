@@ -4,7 +4,7 @@ import java.util.HashMap
 
 //촌수 계산
 //https://www.acmicpc.net/problem/1076
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val map = HashMap<String, Int>()
 
     map["black"] = 0

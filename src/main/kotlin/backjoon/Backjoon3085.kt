@@ -4,7 +4,7 @@ import kotlin.math.max
 
 //사탕게임
 //https://www.acmicpc.net/problem/3085
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val size = readln().toInt()
     val map = Array(size) { charArrayOf() }
 

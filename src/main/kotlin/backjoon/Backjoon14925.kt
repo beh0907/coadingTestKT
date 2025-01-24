@@ -9,7 +9,7 @@ import kotlin.math.min
 private val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (x, y) = readln().split(" ").map { it.toInt() }.toIntArray()
     val map = Array(x) { IntArray(y) }
     val dp = Array(x + 1) { IntArray(y + 1) }

@@ -13,7 +13,7 @@ private val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 
 private var isFlag = true
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
 
     //맵 정보를 읽는다
     repeat(12) { i ->

@@ -6,7 +6,7 @@ import java.util.*
 
 //촌수 계산
 //https://www.acmicpc.net/problem/2644
-fun main(args: Array<String>)  {
+fun main()  {
     val br = BufferedReader(InputStreamReader(System.`in`)) // BufferedReader 생성
 
     val n = br.readLine().toInt()

@@ -4,7 +4,7 @@ import java.util.*
 
 //탈출
 //https://www.acmicpc.net/problem/3055
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (r, c) = readln().split(" ").map { it.toInt() }.toIntArray()
     val map = Array(r) { CharArray(c) }
 

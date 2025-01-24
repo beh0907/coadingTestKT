@@ -7,7 +7,7 @@ import kotlin.math.abs
 //https://www.acmicpc.net/problem/6087
 private val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (y, x) = readln().trim().split(" ").map { it.toInt() }
     val map = Array(x) { CharArray(y) }
     val targets = ArrayList<Node>()

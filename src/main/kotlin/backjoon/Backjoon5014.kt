@@ -4,7 +4,7 @@ import java.util.*
 
 //스타트링크
 //https://www.acmicpc.net/problem/5014
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     //F = 건물 높이, S = 시작 층, G = 목표 층, U = 한번에 올라가는 층, D = 한번에 내려가는 층
     val (F, S, G, U, D) = readln().split(" ").map { it.toInt() }
 

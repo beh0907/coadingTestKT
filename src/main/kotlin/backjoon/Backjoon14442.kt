@@ -6,7 +6,7 @@ import java.util.*
 //https://www.acmicpc.net/problem/14442
 private val dirs = arrayOf(Pair(-1, 0), Pair(0, 1), Pair(1, 0), Pair(0, -1))
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (x, y, wall) = readln().split(" ").map { it.toInt() }.toIntArray()
 
     val map = Array(x) { IntArray(y) }

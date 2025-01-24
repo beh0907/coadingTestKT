@@ -8,7 +8,7 @@ private val values = Array(9) { 0 }
 
 //백설 공주와 일곱 난쟁이
 //https://www.acmicpc.net/problem/3040
-fun main(args: Array<String>): Unit = with(System.`in`.bufferedReader()) {
+fun main(): Unit = with(System.`in`.bufferedReader()) {
     repeat(9) { i ->
         values[i] = readln().toInt()
     }

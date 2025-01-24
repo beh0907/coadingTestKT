@@ -5,7 +5,7 @@ import kotlin.math.abs
 
 //맥주 마시면서 걸어가기
 //https://www.acmicpc.net/problem/9205
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val cases = readln().toInt()
 
     repeat(cases) { case ->

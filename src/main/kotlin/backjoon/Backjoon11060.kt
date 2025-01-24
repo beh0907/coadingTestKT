@@ -4,7 +4,7 @@ import kotlin.math.min
 
 //점프점프
 //https://www.acmicpc.net/problem/11060
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val Max = 999999
 
     //지도 사이즈를 얻어온다

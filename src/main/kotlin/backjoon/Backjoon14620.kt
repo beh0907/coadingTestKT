@@ -13,7 +13,7 @@ private lateinit var map: Array<IntArray> // 맵
 private lateinit var dp: Array<IntArray> // 씨앗 발아 비용
 private lateinit var visited: Array<BooleanArray> // 방문
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val size = readln().toInt()
     map = Array(size) { IntArray(size) }
     dp = Array(size) { IntArray(size) { Int.MAX_VALUE } }

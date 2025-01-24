@@ -3,7 +3,7 @@ package backjoon
 //경로찾기
 //https://www.acmicpc.net/problem/11403
 //플로이드 와샬
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     //지도 사이즈를 얻어온다
     val n = readln().toInt()
     val graph = Array(n) { intArrayOf() }

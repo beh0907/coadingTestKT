@@ -5,7 +5,7 @@ import java.util.*
 
 //양
 //https://www.acmicpc.net/problem/3085
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val (sizeX, sizeY) = readln().split(" ").map { it.toInt() }
     val map = Array(sizeX) { CharArray(sizeY) }
     val visited = Array(sizeX) { BooleanArray(sizeY) }

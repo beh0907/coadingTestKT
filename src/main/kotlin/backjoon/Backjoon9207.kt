@@ -14,7 +14,7 @@ private lateinit var result: Pair<Int, Int>
 //맵 정보
 private lateinit var map: Array<CharArray>
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val cases = readln().toInt()
 
     repeat(cases) { case ->

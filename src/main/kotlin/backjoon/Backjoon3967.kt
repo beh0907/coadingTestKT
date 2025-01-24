@@ -5,7 +5,7 @@ package backjoon
 
 private val blankList = ArrayList<Pair<Int, Int>>()
 
-fun main(args: Array<String>) = with(System.`in`.bufferedReader()) {
+fun main() = with(System.`in`.bufferedReader()) {
     val map = Array(5) { CharArray(9) }
 
     val visited = BooleanArray(12)
