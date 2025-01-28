@@ -34,7 +34,7 @@ fun main() = with(System.`in`.bufferedReader()) {
     }
 }
 
-data class Team(
+private data class Team(
     var size: Int = 1,
     var scores: ArrayList<Int> = arrayListOf(),
 ) : Comparable<Team> {
