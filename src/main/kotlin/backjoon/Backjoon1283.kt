@@ -1,38 +1,48 @@
 package backjoon
 
-import java.util.HashMap
-
 //단축키 지정
 //https://www.acmicpc.net/problem/1283
 fun main() = with(System.`in`.bufferedReader()) {
     val N = readLine().toInt()
     val bw = System.out.bufferedWriter()
-    val map = mutableSetOf<Char>()
+
+    val set = HashSet<Char>()
+    set.add(' ')
 
     repeat(N) {
         val str = readLine()
-        val split = str.split(" ")
+        val spaceIndex = listOf(0) + str.withIndex()
+            .filter { it.value == ' ' }
+            .map { it.index + 1 }
         var keyIndex = -1
 
-        for (word in split) {
-            word[0].lowercaseChar()
+        for (i in spaceIndex) {
+            val word = str[i].lowercaseChar()
+
+            if (word !in set) {
+                set.add(word)
+                keyIndex = i
+                break
+            }
         }
 
+        repeat(str.length) {
+            val word = str[it].lowercaseChar()
+
+            if (keyIndex == -1) {
+                if (word !in set) {
+                    set.add(word)
+                    keyIndex = it
+                }
+            }
+
+            if(it == keyIndex) bw.write("[${str[it]}]")
+            else bw.write("${str[it]}")
+        }
         bw.write("\n")
     }
 
     bw.flush()
     bw.close()
 }
-
-fun main2(args: Array<String>) = with(System.`in`.bufferedReader()) {
-    val bw = System.out.bufferedWriter()
-    val split = readLine().split("-")
-
-    for(str in split) bw.write("${str[0]}")
-
-    bw.flush()
-    bw.close()
-}
-
 
