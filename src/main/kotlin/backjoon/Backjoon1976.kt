@@ -8,7 +8,6 @@ import java.util.StringTokenizer
 fun main() = with(System.`in`.bufferedReader()) {
     val N = readLine().toInt()
     val M = readLine().toInt()
-    var result = "YES"
 
     val graph = Array(N) {
         val tokens = StringTokenizer(readLine())
@@ -16,8 +15,13 @@ fun main() = with(System.`in`.bufferedReader()) {
             tokens.nextToken() == "1"
         }
     }
+    val targets = HashSet<Int>()
+    readLine().split(" ").map { targets.add(it.toInt() - 1) }
 
-    fun bfs(start: Int, end: Int, graph:Array<BooleanArray>): Boolean {
+    fun bfs(graph: Array<BooleanArray>, targets: HashSet<Int>): Boolean {
+        val start = targets.first()
+        targets.remove(start)
+
         val queue = LinkedList<Int>()
         queue.offer(start)
 
@@ -27,6 +31,9 @@ fun main() = with(System.`in`.bufferedReader()) {
         while (queue.isNotEmpty()) {
             val node = queue.poll()
 
+            //모두 방문했다면 완료
+            if (targets.isEmpty()) return true
+
             for (i in graph.indices) {
                 //연결되지 않은 도시라면 continue
                 if (!graph[node][i]) continue
@@ -35,7 +42,7 @@ fun main() = with(System.`in`.bufferedReader()) {
                 if (visited[i]) continue
 
                 //목적지라면 리턴
-                if (i == end) return true
+                if (targets.contains(i)) targets.remove(i)
 
                 visited[i] = true
                 queue.offer(i)
@@ -45,18 +52,10 @@ fun main() = with(System.`in`.bufferedReader()) {
         return false
     }
 
-    val targets = readLine().split(" ").map { it.toInt() - 1 }
-    for (i in 1 until M) {
-        //같은 도시라면 이미 방문
-        if (targets[i - 1] == targets[i]) continue
 
-        if (!bfs(targets[i - 1], targets[i], graph)) {
-            result = "NO"
-            break
-        }
-    }
-
-
-    println(result)
+    println(
+        if (bfs(graph, targets)) "YES" else "NO"
+    )
 }
+
 
